@@ -1,1 +1,1 @@
-# dawo.u
+# dawo.uz

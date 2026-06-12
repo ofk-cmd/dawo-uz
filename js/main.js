@@ -117,6 +117,12 @@
     restart();
   });
 
+  var promoCodeEl = document.getElementById("site-promo-code");
+  var promoBadge = document.querySelector("[data-promo-badge]");
+  if (promoCodeEl && promoBadge) {
+    promoBadge.textContent = promoCodeEl.textContent.trim();
+  }
+
   var copyPromoBtns = document.querySelectorAll(".js-copy-promo");
   copyPromoBtns.forEach(function (btn) {
     var defaultLabel = btn.textContent;

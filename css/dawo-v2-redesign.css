@@ -670,6 +670,232 @@ body.site-dawo.has-sticky-cta .back-to-top.is-visible {
   border-color: var(--fp-lime);
 }
 
+.site-dawo .on-page-nav.page-toc a.page-toc__hub {
+  border-color: rgba(30, 111, 255, 0.35);
+  background: rgba(30, 111, 255, 0.1);
+  color: #dbeafe;
+}
+
+.site-dawo .on-page-nav.page-toc a.page-toc__hub:hover {
+  background: var(--fp-blue);
+  border-color: var(--fp-blue);
+  color: #fff;
+}
+
+/* Hero art — transparent PNG/WebP */
+.site-dawo .hero__art img {
+  background: transparent !important;
+  object-fit: contain;
+  max-height: min(420px, 52vh);
+  width: auto;
+  max-width: 100%;
+  filter: drop-shadow(0 12px 28px rgba(0, 0, 0, 0.45));
+}
+
+/* Stats bar — 20% kompakt */
+.site-dawo .stats-bar--cards {
+  gap: 0.6rem !important;
+  padding: 0.8rem !important;
+  margin: -1.2rem auto 1.2rem !important;
+  max-width: min(var(--max, 1200px), 96%) !important;
+}
+
+.site-dawo .stats-bar--cards .stat-item {
+  padding: 0.8rem !important;
+}
+
+.site-dawo .stats-bar--cards .stat-item__value {
+  font-size: 0.95rem !important;
+}
+
+.site-dawo .stats-bar--cards .stat-item__label {
+  font-size: 0.68rem !important;
+  line-height: 1.25 !important;
+}
+
+.site-dawo .stats-bar--cards .stat-item__icon {
+  font-size: 1.1rem !important;
+}
+
+/* Features — ixcham kartochkalar */
+.site-dawo #features .features-grid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.55rem;
+}
+
+@media (min-width: 768px) {
+  .site-dawo #features .features-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.65rem;
+  }
+}
+
+.site-dawo #features .feature-card {
+  padding: 0.7rem 0.75rem !important;
+  border-radius: 12px !important;
+}
+
+.site-dawo #features .feature-card__icon,
+.site-dawo #features .feature-card__emoji {
+  font-size: 1.15rem !important;
+}
+
+.site-dawo #features .feature-card__title {
+  font-size: 0.88rem !important;
+  margin-bottom: 0.2rem !important;
+  line-height: 1.25 !important;
+}
+
+.site-dawo #features .feature-card__text {
+  font-size: 0.78rem !important;
+  line-height: 1.4 !important;
+  color: var(--fp-muted) !important;
+  margin: 0 !important;
+}
+
+.site-dawo #features .section__intro {
+  margin-top: 0.75rem;
+  margin-bottom: 0;
+}
+
+.site-dawo #features .section__intro p {
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: var(--fp-muted);
+}
+
+/* Slotlar — kichikroq kartochkalar */
+.site-dawo #slots .games-grid,
+.site-dawo .section--alt .games-grid {
+  gap: 0.5rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (min-width: 640px) {
+  .site-dawo #slots .games-grid,
+  .site-dawo .section--alt .games-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.site-dawo .games-grid .game-card__thumb {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  max-height: 88px;
+  overflow: hidden;
+  background: var(--fp-navy-mid, #152238);
+  border-radius: 10px;
+}
+
+.site-dawo .games-grid .game-card__thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  -o-object-fit: cover;
+  object-position: center;
+  background: var(--fp-navy-mid, #152238);
+}
+
+@supports not (aspect-ratio: 4 / 3) {
+  .site-dawo .games-grid .game-card__thumb {
+    height: 72px;
+  }
+}
+
+.site-dawo .games-grid .game-card__placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  min-height: 72px;
+  font-size: 1.5rem;
+  background: var(--fp-navy-mid, #152238);
+}
+
+.site-dawo .games-grid .game-card__body {
+  padding: 0.45rem 0.5rem 0.55rem;
+}
+
+.site-dawo .games-grid .game-card__name {
+  font-size: 0.78rem;
+  line-height: 1.25;
+}
+
+.site-dawo .games-grid .game-card__provider {
+  font-size: 0.68rem;
+}
+
+.site-dawo .games-grid .game-card__play .btn {
+  font-size: 0.72rem;
+  padding: 0.35rem 0.55rem;
+}
+
+/* Umumiy matn uslubi — etalon bo'limlar va SEO */
+.site-dawo .section__title {
+  color: #fff;
+  line-height: 1.2;
+}
+
+.site-dawo .section__subtitle,
+.site-dawo .section__intro p {
+  color: var(--fp-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.site-dawo .section--seo-expansion .section__header {
+  margin-bottom: 1.5rem;
+}
+
+.site-dawo .section--seo-expansion .section__title {
+  font-size: clamp(1.35rem, 3vw, 1.85rem);
+  color: #fff;
+}
+
+.site-dawo .section--seo-expansion .section__subtitle {
+  color: var(--fp-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  max-width: 42rem;
+}
+
+.site-dawo .seo-expansion__body {
+  margin-top: 0.5rem;
+}
+
+.site-dawo .seo-block--rich > p {
+  color: var(--fp-muted);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  margin: 0 0 0.85rem;
+}
+
+.site-dawo .seo-block--rich > p:last-child {
+  margin-bottom: 0;
+}
+
+.site-dawo .seo-block--rich .section-list,
+.site-dawo .seo-block--rich .seo-list {
+  color: var(--fp-muted);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.site-dawo .seo-block--rich .data-table {
+  font-size: 0.88rem;
+}
+
+.site-dawo .footer-disclaimer {
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--fp-muted);
+  max-width: 40rem;
+  margin: 0.75rem 0 0;
+}
+
 /* Inline / H2-ratio banners */
 .site-dawo .section-banner--inline {
   min-height: 120px !important;
@@ -691,8 +917,170 @@ body.site-dawo.has-sticky-cta .back-to-top.is-visible {
 
 .site-dawo .seo-block--rich > h2 {
   margin-top: 0;
-  color: var(--fp-ink);
+  color: #fff;
   font-size: clamp(1.15rem, 2.2vw, 1.45rem);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.site-dawo .seo-block--rich .multipage-banner-gap--inline {
+  margin: 0.85rem 0 1.15rem;
+}
+
+.site-dawo .seo-block--rich .section-banner--inline .section-banner__tag {
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+}
+
+.site-dawo .seo-block--rich .section-banner--inline .section-banner__title {
+  font-size: clamp(0.95rem, 2.2vw, 1.2rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.site-dawo .seo-block--rich .section-banner--inline .section-banner__sub {
+  font-size: 0.78rem;
+  line-height: 1.35;
+  opacity: 0.9;
+}
+
+.site-dawo .seo-block--rich .fact-strip {
+  margin: 0.85rem 0 1rem;
+}
+
+.site-dawo .seo-block--rich .fact-chip {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+/* Promo visual — hero uslubida + kod badge */
+.site-dawo .promo-block__visual--hero {
+  position: relative;
+  margin: 0 auto;
+  max-width: min(100%, 420px);
+}
+
+.site-dawo .promo-block__visual--hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: min(745px, 70vh);
+  object-fit: contain;
+  background: transparent !important;
+  filter: drop-shadow(0 14px 32px rgba(0, 0, 0, 0.5));
+}
+
+.site-dawo .promo-block__code-badge {
+  position: absolute;
+  left: 50%;
+  bottom: 18%;
+  transform: translateX(-50%);
+  padding: 0.55rem 1.1rem;
+  border-radius: 12px;
+  font-family: "SF Mono", "Fira Code", "Consolas", monospace;
+  font-size: clamp(1.1rem, 3.5vw, 1.45rem);
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: #0b1528;
+  background: linear-gradient(135deg, #b8ff00 0%, #9de600 100%);
+  border: 2px solid rgba(11, 21, 40, 0.85);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+/* To'lov jadvali — SVG logotiplar */
+.site-dawo .payment-logos-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: 0 0 1.1rem;
+  padding: 0.75rem 0.85rem;
+  border-radius: 14px;
+  background: rgba(11, 21, 40, 0.55);
+  border: 1px solid rgba(184, 255, 0, 0.12);
+}
+
+.site-dawo .payment-logos-strip__item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem 0.55rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.site-dawo .payment-logos-strip__item img {
+  display: block;
+  height: 26px;
+  width: auto;
+  max-width: 88px;
+  object-fit: contain;
+}
+
+.site-dawo .payment-method-cell {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.site-dawo .payment-method-cell__logo {
+  flex-shrink: 0;
+  height: 22px;
+  width: auto;
+  max-width: 72px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.site-dawo .data-table--payments td:first-child {
+  min-width: 9.5rem;
+}
+
+/* Mobil — gorizontal app banner */
+.site-dawo .app-download__shot--banner {
+  max-width: 100%;
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(184, 255, 0, 0.15);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+}
+
+.site-dawo .app-download__shot--banner img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (min-width: 900px) {
+  .site-dawo .app-download {
+    grid-template-columns: minmax(280px, 1.1fr) 1fr;
+  }
+
+  .site-dawo .app-download__shot--banner {
+    max-width: none;
+  }
+}
+
+/* Ichki havolalar — matn ichida */
+.site-dawo .section__intro .text-link,
+.site-dawo .content-block .text-link {
+  color: var(--fp-lime, #b8ff00);
+  text-decoration: underline;
+  text-decoration-color: rgba(184, 255, 0, 0.35);
+  text-underline-offset: 0.15em;
+}
+
+.site-dawo .section__intro .text-link:hover,
+.site-dawo .content-block .text-link:hover {
+  color: #d4ff4d;
+  text-decoration-color: rgba(184, 255, 0, 0.7);
 }
 
 /* Info cards (qttk feature-card style) */
@@ -1003,4 +1391,213 @@ body.site-dawo.has-sticky-cta .back-to-top.is-visible {
   border-radius: 14px;
   background: rgba(11, 21, 40, 0.5);
   border: 1px solid rgba(30, 111, 255, 0.15);
+}
+
+/* ═══ QA: typography, cross-browser, theme conflict resets ═══ */
+
+html.site-dawo-root,
+html:has(body.site-dawo) {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  color-scheme: dark;
+}
+
+body.site-dawo.site-fairpari-official {
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body.site-dawo.site-fairpari-official .btn--gold,
+body.site-dawo.site-fairpari-official .btn--primary.app-platform__cta,
+body.site-dawo.site-fairpari-official .sticky-cta__btn {
+  background: linear-gradient(135deg, #b8ff00, #9ae600) !important;
+  color: #0b1528 !important;
+  border: none !important;
+}
+
+body.site-dawo.site-fairpari-official .btn--primary:not(.app-platform__cta) {
+  background: linear-gradient(135deg, #1e6fff, #1554c7) !important;
+  color: #fff !important;
+  border: none !important;
+}
+
+body.site-dawo.site-fairpari-official .btn--ghost {
+  border: 1px solid rgba(184, 255, 0, 0.35) !important;
+  color: var(--fp-ink, #f1f5f9) !important;
+  background: transparent !important;
+}
+
+body.site-dawo.site-fairpari-official .section__eyebrow {
+  background: transparent !important;
+  color: var(--fp-lime) !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  font-size: 0.72rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.14em !important;
+  text-transform: uppercase !important;
+}
+
+body.site-dawo.site-fairpari-official .section__title {
+  font-size: clamp(1.35rem, 3vw, 1.85rem) !important;
+  font-weight: 800 !important;
+  color: #fff !important;
+  line-height: 1.2 !important;
+}
+
+body.site-dawo.site-fairpari-official .section__subtitle,
+body.site-dawo.site-fairpari-official .section__intro,
+body.site-dawo.site-fairpari-official .section__intro p,
+body.site-dawo.site-fairpari-official .content-block__lead,
+body.site-dawo.site-fairpari-official .content-block p,
+body.site-dawo.site-fairpari-official .seo-block--rich p,
+body.site-dawo.site-fairpari-official .seo-block--rich li,
+body.site-dawo.site-fairpari-official .highlight-row__text,
+body.site-dawo.site-fairpari-official .step-flow__text,
+body.site-dawo.site-fairpari-official .split-compare__col li,
+body.site-dawo.site-fairpari-official .winner-card__story,
+body.site-dawo.site-fairpari-official .faq-item__answer,
+body.site-dawo.site-fairpari-official .legal-page p,
+body.site-dawo.site-fairpari-official .legal-page li {
+  font-size: 0.9375rem !important;
+  line-height: 1.65 !important;
+  color: var(--fp-muted, #94a3b8) !important;
+}
+
+body.site-dawo.site-fairpari-official .seo-block--rich > h2,
+body.site-dawo.site-fairpari-official .legal-page h2 {
+  font-size: clamp(1.1rem, 2.4vw, 1.3rem) !important;
+  font-weight: 700 !important;
+  color: #fff !important;
+  line-height: 1.25 !important;
+  margin: 0 0 0.75rem !important;
+}
+
+body.site-dawo.site-fairpari-official .info-card__title {
+  font-size: 0.9rem !important;
+  font-weight: 700 !important;
+  margin: 0 0 0.35rem !important;
+}
+
+body.site-dawo.site-fairpari-official .info-card__text {
+  font-size: 0.85rem !important;
+  line-height: 1.5 !important;
+}
+
+body.site-dawo.site-fairpari-official .data-table,
+body.site-dawo.site-fairpari-official .data-table td,
+body.site-dawo.site-fairpari-official .data-table th {
+  font-size: 0.875rem !important;
+}
+
+body.site-dawo.site-fairpari-official .text-link,
+body.site-dawo.site-fairpari-official .section__intro .text-link,
+body.site-dawo.site-fairpari-official .content-block .text-link,
+body.site-dawo.site-fairpari-official .seo-block--rich .text-link {
+  color: var(--fp-lime, #b8ff00) !important;
+  text-decoration: underline;
+  text-decoration-color: rgba(184, 255, 0, 0.35);
+  text-underline-offset: 0.15em;
+}
+
+body.site-dawo.site-fairpari-official .hero__subtitle {
+  font-size: 1rem !important;
+  line-height: 1.55 !important;
+  color: var(--fp-muted, #94a3b8) !important;
+}
+
+body.site-dawo.site-fairpari-official .hero__art img {
+  object-fit: contain !important;
+  background: transparent !important;
+}
+
+body.site-dawo.site-fairpari-official .game-card {
+  border: 1px solid rgba(184, 255, 0, 0.15) !important;
+  border-radius: 12px !important;
+}
+
+body.site-dawo.site-fairpari-official .stats-bar--cards .stat-item {
+  border: 1px solid rgba(184, 255, 0, 0.12) !important;
+  border-left: 3px solid var(--fp-lime, #b8ff00) !important;
+  background: rgba(21, 34, 56, 0.85) !important;
+}
+
+body.site-dawo.site-fairpari-official .section--alt {
+  background: linear-gradient(180deg, rgba(21, 34, 56, 0.6), rgba(11, 21, 40, 0.4)) !important;
+}
+
+body.site-dawo.site-fairpari-official .legal-page {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 1.5rem 0 2.5rem;
+}
+
+body.site-dawo.site-fairpari-official .legal-page h1 {
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
+  color: #fff;
+  margin: 0 0 1rem;
+}
+
+body.site-dawo.site-fairpari-official .legal-page h2 {
+  margin-top: 1.5rem;
+}
+
+body.site-dawo.site-fairpari-official .section-banner__bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -o-object-fit: cover;
+}
+
+@supports not (object-fit: cover) {
+  body.site-dawo.site-fairpari-official .section-banner__bg {
+    min-height: 120px;
+  }
+}
+
+body.site-dawo.site-fairpari-official .promo-block__bg,
+body.site-dawo.site-fairpari-official .app-download__shot--banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -o-object-fit: cover;
+}
+
+body.site-dawo.site-fairpari-official .table-scroll {
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+
+body.site-dawo.site-fairpari-official .on-page-nav.page-toc a {
+  font-size: 0.85rem !important;
+}
+
+@media (max-width: 767px) {
+  body.site-dawo.site-fairpari-official .hero__slide-inner--split {
+    grid-template-columns: 1fr !important;
+    padding: 1.5rem 1rem !important;
+    gap: 1rem !important;
+  }
+
+  body.site-dawo.site-fairpari-official .hero__art {
+    max-width: min(280px, 72vw);
+    margin: 0 auto;
+  }
+
+  body.site-dawo.site-fairpari-official .info-card-grid--3 {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.site-dawo.site-fairpari-official *,
+  body.site-dawo.site-fairpari-official *::before,
+  body.site-dawo.site-fairpari-official *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

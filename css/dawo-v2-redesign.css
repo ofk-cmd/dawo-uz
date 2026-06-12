@@ -682,8 +682,33 @@ body.site-dawo.has-sticky-cta .back-to-top.is-visible {
   color: #fff;
 }
 
-/* Hero art — transparent PNG/WebP */
-.site-dawo .hero__art img {
+/* Hero promo banner — same visual language as .promo-block__bg */
+.site-dawo .hero__art--promo {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  min-height: 148px;
+  aspect-ratio: 600 / 200;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(184, 255, 0, 0.2);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+}
+
+.site-dawo .hero__art--promo .hero__banner-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center right;
+  display: block;
+  background: transparent !important;
+  filter: none;
+  max-height: none;
+}
+
+.site-dawo .hero__art:not(.hero__art--promo) img {
   background: transparent !important;
   object-fit: contain;
   max-height: min(420px, 52vh);
@@ -1508,7 +1533,13 @@ body.site-dawo.site-fairpari-official .hero__subtitle {
   color: var(--fp-muted, #94a3b8) !important;
 }
 
-body.site-dawo.site-fairpari-official .hero__art img {
+body.site-dawo.site-fairpari-official .hero__art--promo .hero__banner-img {
+  object-fit: cover !important;
+  -o-object-fit: cover !important;
+  background: transparent !important;
+}
+
+body.site-dawo.site-fairpari-official .hero__art:not(.hero__art--promo) img {
   object-fit: contain !important;
   background: transparent !important;
 }
@@ -1558,6 +1589,7 @@ body.site-dawo.site-fairpari-official .section-banner__bg {
 }
 
 body.site-dawo.site-fairpari-official .promo-block__bg,
+body.site-dawo.site-fairpari-official .hero__art--promo .hero__banner-img,
 body.site-dawo.site-fairpari-official .app-download__shot--banner img {
   width: 100%;
   height: 100%;
@@ -1581,7 +1613,13 @@ body.site-dawo.site-fairpari-official .on-page-nav.page-toc a {
     gap: 1rem !important;
   }
 
-  body.site-dawo.site-fairpari-official .hero__art {
+  body.site-dawo.site-fairpari-official .hero__art--promo {
+    max-width: 100%;
+    min-height: 132px;
+    margin: 0;
+  }
+
+  body.site-dawo.site-fairpari-official .hero__art:not(.hero__art--promo) {
     max-width: min(280px, 72vw);
     margin: 0 auto;
   }

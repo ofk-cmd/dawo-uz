@@ -2156,17 +2156,6 @@ body.site-dawo.has-sticky-cta .back-to-top.is-visible {
     right: 0.5rem;
     width: auto;
   }
-  .site-dawo .sticky-cta__panel {
-    grid-template-columns: 1fr auto;
-  }
-  .site-dawo .sticky-cta__btn {
-    grid-column: 1;
-  }
-  .site-dawo .sticky-cta__close {
-    grid-column: 2;
-    grid-row: 1 / span 2;
-    align-self: start;
-  }
 }
 
 .site-dawo .site-footer {

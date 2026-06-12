@@ -187,128 +187,99 @@
   transition: width 0.8s ease;
 }
 
-/* Promo carousel */
-.site-dawo .promo-carousel {
+/* Promo blocks grid (static banners, no slider) */
+.site-dawo .promo-blocks-grid {
+  display: grid;
+  gap: 0.85rem;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 1rem;
+}
+
+@media (max-width: 640px) {
+  .site-dawo .promo-blocks-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.site-dawo .promo-block {
   position: relative;
-  border-radius: 20px;
+  border-radius: 16px;
   overflow: hidden;
+  min-height: 148px;
   border: 1px solid rgba(184, 255, 0, 0.2);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
 }
 
-.site-dawo .promo-carousel__viewport {
-  position: relative;
-  min-height: 200px;
-  aspect-ratio: 1200 / 280;
-  max-height: 320px;
+.site-dawo .promo-blocks-grid .promo-block:first-child:nth-last-child(5) {
+  grid-column: 1 / -1;
 }
 
-.site-dawo .promo-slide {
+@media (min-width: 641px) {
+  .site-dawo .promo-blocks-grid .promo-block:first-child:nth-last-child(5) {
+    grid-column: 1 / -1;
+    min-height: 168px;
+  }
+}
+
+.site-dawo .promo-block__bg {
   position: absolute;
   inset: 0;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.45s ease;
-}
-
-.site-dawo .promo-slide.is-active {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.site-dawo .promo-slide__bg {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center right;
   display: block;
 }
 
-.site-dawo .promo-slide__content {
-  position: absolute;
-  inset: 0;
+.site-dawo .promo-block__content {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1.5rem 4rem;
-  background: linear-gradient(105deg, rgba(11, 21, 40, 0.92) 0%, rgba(11, 21, 40, 0.5) 45%, transparent 70%);
+  align-items: flex-start;
+  min-height: 148px;
+  padding: 1rem 1.15rem;
+  max-width: 72%;
+  background: linear-gradient(
+    100deg,
+    rgba(11, 21, 40, 0.96) 0%,
+    rgba(11, 21, 40, 0.82) 55%,
+    transparent 100%
+  );
 }
 
-.site-dawo .promo-slide__tag {
+.site-dawo .promo-block__tag {
   display: inline-block;
-  font-size: 0.72rem;
+  font-size: 0.68rem;
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.1em;
   color: var(--fp-navy);
   background: var(--fp-lime);
-  padding: 0.2rem 0.65rem;
+  padding: 0.18rem 0.55rem;
   border-radius: 999px;
-  width: fit-content;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
 }
 
-.site-dawo .promo-slide__title {
+.site-dawo .promo-block__title {
   margin: 0;
-  font-size: clamp(1.35rem, 3.5vw, 2rem);
+  font-size: clamp(1rem, 2.2vw, 1.35rem);
   color: #fff;
   font-weight: 800;
-  line-height: 1.15;
+  line-height: 1.2;
 }
 
-.site-dawo .promo-slide__sub {
-  margin: 0.35rem 0 0.85rem;
+.site-dawo .promo-block__sub {
+  margin: 0.25rem 0 0.6rem;
   color: var(--fp-muted);
-  font-size: 0.95rem;
+  font-size: 0.82rem;
+  line-height: 1.35;
 }
 
-.site-dawo .promo-slide__cta {
-  width: fit-content;
-  padding: 0.55rem 1.25rem;
-}
-
-.site-dawo .promo-carousel__nav {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 3;
-  width: 40px;
-  height: 40px;
-  border: 1px solid rgba(184, 255, 0, 0.35);
-  background: rgba(11, 21, 40, 0.85);
-  color: var(--fp-lime);
-  border-radius: 50%;
-  font-size: 1.5rem;
-  line-height: 1;
-  cursor: pointer;
-}
-
-.site-dawo .promo-carousel__nav--prev { left: 0.75rem; }
-.site-dawo .promo-carousel__nav--next { right: 0.75rem; }
-
-.site-dawo .promo-carousel__dots {
-  position: absolute;
-  bottom: 0.75rem;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 0.4rem;
-  z-index: 3;
-}
-
-.site-dawo .promo-carousel__dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  border: none;
-  background: rgba(255, 255, 255, 0.35);
-  cursor: pointer;
-  padding: 0;
-}
-
-.site-dawo .promo-carousel__dot.is-active {
-  background: var(--fp-lime);
-  width: 24px;
-  border-radius: 999px;
+.site-dawo .promo-block__cta {
+  padding: 0.45rem 0.9rem;
+  font-size: 0.78rem;
 }
 
 /* Winner cards */
@@ -553,13 +524,10 @@ body.site-dawo.has-sticky-cta .back-to-top.is-visible {
 }
 
 @media (max-width: 480px) {
-  .site-dawo .promo-slide__content {
-    padding: 1rem 3rem 2.5rem;
-  }
-  .site-dawo .promo-carousel__nav {
-    width: 36px;
-    height: 36px;
-    font-size: 1.25rem;
+  .site-dawo .promo-block__content {
+    max-width: 85%;
+    padding: 0.85rem 1rem;
+    min-height: 132px;
   }
   .site-dawo .winners-grid {
     grid-template-columns: 1fr;

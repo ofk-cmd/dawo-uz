@@ -5,6 +5,11 @@
     "page": "home"
   },
   {
+    "file": "assets/banners/home-s02.webp",
+    "type": "section",
+    "page": "home"
+  },
+  {
     "file": "assets/banners/bonuslar-s01.webp",
     "type": "section",
     "page": "bonuslar"
@@ -26,6 +31,11 @@
   },
   {
     "file": "assets/banners/sharhlar-s01.webp",
+    "type": "section",
+    "page": "sharhlar"
+  },
+  {
+    "file": "assets/banners/sharhlar-s02.webp",
     "type": "section",
     "page": "sharhlar"
   }

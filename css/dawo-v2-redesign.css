@@ -1,0 +1,511 @@
+/* dawo.uz v2 — FairPari official: navy #0b1528 · lime #b8ff00 · blue #1e6fff */
+
+.site-dawo.site-fairpari-official {
+  --fp-navy: #0b1528;
+  --fp-navy-mid: #152238;
+  --fp-navy-light: #1e3354;
+  --fp-lime: #b8ff00;
+  --fp-lime-dim: rgba(184, 255, 0, 0.12);
+  --fp-blue: #1e6fff;
+  --fp-ink: #f1f5f9;
+  --fp-muted: #94a3b8;
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(30, 111, 255, 0.15), transparent),
+    radial-gradient(ellipse 60% 40% at 100% 0%, rgba(184, 255, 0, 0.06), transparent),
+    var(--fp-navy);
+}
+
+.site-dawo .site-header {
+  background: rgba(11, 21, 40, 0.92) !important;
+  border-bottom: 1px solid rgba(184, 255, 0, 0.15) !important;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+}
+
+.site-dawo .brand__logo-img {
+  filter: drop-shadow(0 0 12px rgba(184, 255, 0, 0.25));
+}
+
+.site-dawo .hero__banner,
+.site-dawo .hero--page .hero__banner {
+  background:
+    linear-gradient(135deg, rgba(11, 21, 40, 0.95) 0%, rgba(21, 34, 56, 0.9) 50%, rgba(11, 21, 40, 0.98) 100%) !important;
+  border: 1px solid rgba(184, 255, 0, 0.2) !important;
+  border-radius: 24px !important;
+  box-shadow:
+    0 0 0 1px rgba(30, 111, 255, 0.1),
+    0 24px 48px rgba(0, 0, 0, 0.45),
+    0 0 60px rgba(184, 255, 0, 0.06) !important;
+  overflow: hidden;
+  position: relative;
+}
+
+.site-dawo .hero__banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent 40%, rgba(184, 255, 0, 0.03) 50%, transparent 60%);
+  pointer-events: none;
+}
+
+.site-dawo .hero__title {
+  background: linear-gradient(135deg, #fff 0%, var(--fp-lime) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: clamp(1.75rem, 4.5vw, 2.75rem) !important;
+}
+
+.site-dawo .section {
+  position: relative;
+}
+
+.site-dawo .section--alt {
+  background: linear-gradient(180deg, rgba(21, 34, 56, 0.6), rgba(11, 21, 40, 0.4)) !important;
+  border-block: 1px solid rgba(184, 255, 0, 0.06);
+}
+
+.site-dawo .section__eyebrow {
+  color: var(--fp-lime) !important;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.site-dawo .hub-card {
+  background: linear-gradient(145deg, rgba(21, 34, 56, 0.9), rgba(11, 21, 40, 0.95)) !important;
+  border: 1px solid rgba(184, 255, 0, 0.18) !important;
+  border-radius: 16px !important;
+  padding: 1.25rem !important;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.site-dawo .hub-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--fp-lime) !important;
+  box-shadow: 0 12px 32px rgba(184, 255, 0, 0.12) !important;
+}
+
+.site-dawo .hub-card strong {
+  color: var(--fp-lime) !important;
+  font-size: 1.05rem;
+}
+
+/* Tables */
+.site-dawo .data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(21, 34, 56, 0.85);
+  border: 1px solid rgba(184, 255, 0, 0.15);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.site-dawo .data-table--striped tbody tr:nth-child(even) td {
+  background: rgba(11, 21, 40, 0.5);
+}
+
+.site-dawo .data-table th {
+  background: rgba(184, 255, 0, 0.1) !important;
+  color: var(--fp-lime) !important;
+  font-weight: 700;
+  text-align: left;
+  padding: 0.75rem 1rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.site-dawo .data-table td {
+  padding: 0.7rem 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  color: var(--fp-ink);
+}
+
+.site-dawo .data-table--compact th,
+.site-dawo .data-table--compact td {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9rem;
+}
+
+.site-dawo .table-card {
+  background: rgba(21, 34, 56, 0.5);
+  border: 1px solid rgba(184, 255, 0, 0.12);
+  border-radius: 18px;
+  padding: 1.25rem;
+  margin: 1rem 0;
+}
+
+.site-dawo .table-card__title {
+  margin: 0 0 1rem;
+  font-size: 1.15rem;
+  color: #fff;
+}
+
+.site-dawo .table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Stat bars (pseudo-charts) */
+.site-dawo .stat-bars-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.site-dawo .stat-bar {
+  background: rgba(21, 34, 56, 0.8);
+  border: 1px solid rgba(184, 255, 0, 0.12);
+  border-radius: 14px;
+  padding: 1rem 1.15rem;
+}
+
+.site-dawo .stat-bar__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.6rem;
+  font-size: 0.9rem;
+  color: var(--fp-muted);
+}
+
+.site-dawo .stat-bar__head strong {
+  color: var(--fp-lime);
+  font-size: 1.1rem;
+}
+
+.site-dawo .stat-bar__track {
+  height: 8px;
+  background: rgba(11, 21, 40, 0.8);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.site-dawo .stat-bar__fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--fp-blue), var(--fp-lime));
+  border-radius: 999px;
+  transition: width 0.8s ease;
+}
+
+/* Promo carousel */
+.site-dawo .promo-carousel {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(184, 255, 0, 0.2);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+}
+
+.site-dawo .promo-carousel__viewport {
+  position: relative;
+  min-height: 200px;
+  aspect-ratio: 1200 / 280;
+  max-height: 320px;
+}
+
+.site-dawo .promo-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.45s ease;
+}
+
+.site-dawo .promo-slide.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.site-dawo .promo-slide__bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.site-dawo .promo-slide__content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem 4rem;
+  background: linear-gradient(105deg, rgba(11, 21, 40, 0.92) 0%, rgba(11, 21, 40, 0.5) 45%, transparent 70%);
+}
+
+.site-dawo .promo-slide__tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--fp-navy);
+  background: var(--fp-lime);
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  width: fit-content;
+  margin-bottom: 0.5rem;
+}
+
+.site-dawo .promo-slide__title {
+  margin: 0;
+  font-size: clamp(1.35rem, 3.5vw, 2rem);
+  color: #fff;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.site-dawo .promo-slide__sub {
+  margin: 0.35rem 0 0.85rem;
+  color: var(--fp-muted);
+  font-size: 0.95rem;
+}
+
+.site-dawo .promo-slide__cta {
+  width: fit-content;
+  padding: 0.55rem 1.25rem;
+}
+
+.site-dawo .promo-carousel__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(184, 255, 0, 0.35);
+  background: rgba(11, 21, 40, 0.85);
+  color: var(--fp-lime);
+  border-radius: 50%;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.site-dawo .promo-carousel__nav--prev { left: 0.75rem; }
+.site-dawo .promo-carousel__nav--next { right: 0.75rem; }
+
+.site-dawo .promo-carousel__dots {
+  position: absolute;
+  bottom: 0.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.4rem;
+  z-index: 3;
+}
+
+.site-dawo .promo-carousel__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.35);
+  cursor: pointer;
+  padding: 0;
+}
+
+.site-dawo .promo-carousel__dot.is-active {
+  background: var(--fp-lime);
+  width: 24px;
+  border-radius: 999px;
+}
+
+/* Winner cards */
+.site-dawo .winners-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.site-dawo .winner-card {
+  background: linear-gradient(160deg, rgba(21, 34, 56, 0.95), rgba(11, 21, 40, 0.98));
+  border: 1px solid rgba(184, 255, 0, 0.15);
+  border-radius: 18px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.site-dawo .winner-card__head {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.site-dawo .winner-card__avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--fp-blue), var(--fp-lime));
+  color: var(--fp-navy);
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+}
+
+.site-dawo .winner-card__name {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #fff;
+}
+
+.site-dawo .winner-card__meta {
+  margin: 0.15rem 0 0;
+  font-size: 0.82rem;
+  color: var(--fp-muted);
+}
+
+.site-dawo .winner-card__win {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--fp-lime);
+  text-align: right;
+  line-height: 1.2;
+}
+
+.site-dawo .winner-card__story {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--fp-ink);
+}
+
+.site-dawo .winner-card__ig {
+  font-size: 0.82rem;
+  color: var(--fp-blue);
+  text-decoration: none;
+}
+
+.site-dawo .winner-card__ig:hover {
+  color: var(--fp-lime);
+}
+
+/* SEO blocks — lists to table style */
+.site-dawo .seo-block .data-table--kv td:first-child {
+  font-weight: 600;
+  color: var(--fp-lime);
+  width: 38%;
+}
+
+/* Sticky CTA fix */
+.site-dawo .sticky-cta--dock {
+  position: fixed !important;
+  z-index: 9999 !important;
+  left: max(0.75rem, env(safe-area-inset-left)) !important;
+  right: max(0.75rem, env(safe-area-inset-right)) !important;
+  bottom: max(0.75rem, env(safe-area-inset-bottom)) !important;
+  width: auto !important;
+  max-width: 480px;
+  margin: 0 auto;
+  transform: none !important;
+}
+
+.site-dawo .sticky-cta--dock.is-hidden {
+  transform: translateY(calc(100% + 2rem)) !important;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.site-dawo .sticky-cta__panel {
+  display: grid !important;
+  grid-template-columns: 1fr auto 44px !important;
+  grid-template-rows: auto auto !important;
+  gap: 0.5rem 0.65rem !important;
+  padding: 0.75rem 0.85rem !important;
+  border-radius: 16px !important;
+  border: 1px solid rgba(184, 255, 0, 0.35) !important;
+  background: linear-gradient(135deg, #0b1528, #152238) !important;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.55) !important;
+}
+
+.site-dawo .sticky-cta__text {
+  grid-column: 1 / -1 !important;
+  margin: 0 !important;
+  font-size: 0.88rem !important;
+  line-height: 1.35 !important;
+  color: #fff !important;
+}
+
+.site-dawo .sticky-cta__highlight {
+  color: var(--fp-lime) !important;
+}
+
+.site-dawo .sticky-cta__btn {
+  grid-column: 1 / 2 !important;
+  grid-row: 2 !important;
+  justify-self: start;
+}
+
+.site-dawo .sticky-cta__close {
+  grid-column: 3 !important;
+  grid-row: 1 / span 2 !important;
+  align-self: center !important;
+  width: 44px !important;
+  height: 44px !important;
+  min-width: 44px !important;
+  min-height: 44px !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: #fff !important;
+  border-radius: 12px !important;
+  font-size: 1.5rem !important;
+  line-height: 1 !important;
+  cursor: pointer !important;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.site-dawo .sticky-cta__close:hover,
+.site-dawo .sticky-cta__close:focus-visible {
+  background: rgba(184, 255, 0, 0.2) !important;
+  border-color: var(--fp-lime) !important;
+}
+
+body.site-dawo.has-sticky-cta {
+  padding-bottom: calc(5.5rem + env(safe-area-inset-bottom, 0px));
+}
+
+body.site-dawo.has-sticky-cta .back-to-top.is-visible {
+  bottom: calc(6rem + env(safe-area-inset-bottom, 0px)) !important;
+}
+
+@media (max-width: 480px) {
+  .site-dawo .promo-slide__content {
+    padding: 1rem 3rem 2.5rem;
+  }
+  .site-dawo .promo-carousel__nav {
+    width: 36px;
+    height: 36px;
+    font-size: 1.25rem;
+  }
+  .site-dawo .winners-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Section banners v2 */
+.site-dawo .section-banner {
+  border: 1px solid rgba(184, 255, 0, 0.25) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35) !important;
+}
+
+.site-dawo .section-banner__tag {
+  background: var(--fp-lime-dim) !important;
+  color: var(--fp-lime) !important;
+  border-color: rgba(184, 255, 0, 0.4) !important;
+}
+
+.site-dawo .live-wins {
+  background: linear-gradient(90deg, #0b1528, #152238, #0b1528) !important;
+  border-color: rgba(184, 255, 0, 0.1) !important;
+}
+
+.site-dawo .site-footer {
+  background: #060d18 !important;
+  border-top: 2px solid rgba(184, 255, 0, 0.12) !important;
+}

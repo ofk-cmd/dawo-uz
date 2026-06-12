@@ -55,15 +55,67 @@
 
   var stickyCta = document.getElementById("sticky-cta");
   if (stickyCta) {
-    document.body.classList.add("has-sticky-cta");
+    var stickyKey = "dawo_sticky_dismissed";
+    if (sessionStorage.getItem(stickyKey) === "1") {
+      stickyCta.classList.add("is-hidden");
+    } else {
+      document.body.classList.add("has-sticky-cta");
+    }
     var closeBtn = stickyCta.querySelector(".sticky-cta__close");
+    function dismissSticky(event) {
+      if (event) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      stickyCta.classList.add("is-hidden");
+      document.body.classList.remove("has-sticky-cta");
+      try {
+        sessionStorage.setItem(stickyKey, "1");
+      } catch (e) {}
+    }
     if (closeBtn) {
-      closeBtn.addEventListener("click", function () {
-        stickyCta.classList.add("is-hidden");
-        document.body.classList.remove("has-sticky-cta");
-      });
+      closeBtn.addEventListener("click", dismissSticky);
+      closeBtn.addEventListener("touchend", dismissSticky, { passive: false });
     }
   }
+
+  document.querySelectorAll("[data-carousel]").forEach(function (root) {
+    var slides = root.querySelectorAll(".promo-slide");
+    if (!slides.length) return;
+    var dots = root.querySelectorAll(".promo-carousel__dot");
+    var prev = root.querySelector(".promo-carousel__nav--prev");
+    var next = root.querySelector(".promo-carousel__nav--next");
+    var index = 0;
+    var timer;
+
+    function show(i) {
+      index = (i + slides.length) % slides.length;
+      slides.forEach(function (s, n) {
+        s.classList.toggle("is-active", n === index);
+      });
+      dots.forEach(function (d, n) {
+        d.classList.toggle("is-active", n === index);
+      });
+    }
+
+    function restart() {
+      clearInterval(timer);
+      timer = setInterval(function () {
+        show(index + 1);
+      }, 6000);
+    }
+
+    if (prev) prev.addEventListener("click", function () { show(index - 1); restart(); });
+    if (next) next.addEventListener("click", function () { show(index + 1); restart(); });
+    dots.forEach(function (dot) {
+      dot.addEventListener("click", function () {
+        var n = parseInt(dot.getAttribute("data-goto"), 10);
+        if (!isNaN(n)) { show(n); restart(); }
+      });
+    });
+    show(0);
+    restart();
+  });
 
   var copyPromoBtns = document.querySelectorAll(".js-copy-promo");
   copyPromoBtns.forEach(function (btn) {

@@ -145,6 +145,35 @@
   -webkit-overflow-scrolling: touch;
 }
 
+.site-dawo .table-card__note {
+  margin: -0.35rem 0 0.85rem;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: var(--fp-muted);
+}
+
+.site-dawo .data-table--payments {
+  font-size: 0.82rem;
+  min-width: 640px;
+}
+
+.site-dawo .data-table--payments th,
+.site-dawo .data-table--payments td {
+  white-space: nowrap;
+}
+
+.site-dawo .data-table--payments th:nth-child(1),
+.site-dawo .data-table--payments td:nth-child(1) {
+  white-space: normal;
+  min-width: 5.5rem;
+}
+
+.site-dawo .data-table--payments th:nth-child(7),
+.site-dawo .data-table--payments td:nth-child(7) {
+  white-space: normal;
+  min-width: 6.5rem;
+}
+
 /* Stat bars (pseudo-charts) */
 .site-dawo .stat-bars-grid {
   display: grid;

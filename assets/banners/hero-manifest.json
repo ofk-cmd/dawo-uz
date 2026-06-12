@@ -1,0 +1,56 @@
+[
+  {
+    "file": "assets/banners/hero-banner-home.webp",
+    "page": "home",
+    "theme": "casino-bonus",
+    "bytes": 81678
+  },
+  {
+    "file": "assets/banners/hero-banner-bonuslar.webp",
+    "page": "bonuslar",
+    "theme": "vip-cashback",
+    "bytes": 85912
+  },
+  {
+    "file": "assets/banners/hero-banner-mobil.webp",
+    "page": "mobil",
+    "theme": "mobile-app",
+    "bytes": 49140
+  },
+  {
+    "file": "assets/banners/hero-banner-royxatdan-otish.webp",
+    "page": "royxatdan-otish",
+    "theme": "casino-bonus",
+    "bytes": 82812
+  },
+  {
+    "file": "assets/banners/hero-banner-kirish.webp",
+    "page": "kirish",
+    "theme": "security",
+    "bytes": 78534
+  },
+  {
+    "file": "assets/banners/hero-banner-tolov.webp",
+    "page": "tolov",
+    "theme": "security",
+    "bytes": 79516
+  },
+  {
+    "file": "assets/banners/hero-banner-kazino.webp",
+    "page": "kazino",
+    "theme": "vip-cashback",
+    "bytes": 87280
+  },
+  {
+    "file": "assets/banners/hero-banner-sport.webp",
+    "page": "sport",
+    "theme": "sports-bonus",
+    "bytes": 65656
+  },
+  {
+    "file": "assets/banners/hero-banner-sharhlar.webp",
+    "page": "sharhlar",
+    "theme": "express-win",
+    "bytes": 44102
+  }
+]

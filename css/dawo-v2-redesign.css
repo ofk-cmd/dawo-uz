@@ -466,87 +466,85 @@
 }
 
 .site-dawo .sticky-cta__icon {
-  flex-shrink: 0;
+  flex: 0 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.65rem;
+  font-size: 1.5rem;
   line-height: 1;
-  width: 2.25rem;
-  height: 2.25rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 .site-dawo .sticky-cta__panel {
   display: flex !important;
   flex-direction: row !important;
   align-items: center !important;
-  gap: 0.6rem !important;
-  padding: 0.7rem 0.75rem !important;
+  gap: 0.5rem !important;
+  padding: 0.55rem 0.6rem !important;
   border-radius: 14px !important;
   border: 1px solid rgba(184, 255, 0, 0.35) !important;
   background: linear-gradient(135deg, #0b1528, #152238) !important;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.55) !important;
   grid-template-columns: unset !important;
   grid-template-rows: unset !important;
-}
-
-.site-dawo .sticky-cta__main {
-  flex: 1;
-  min-width: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.45rem;
+  width: 100% !important;
 }
 
 .site-dawo .sticky-cta__text {
+  flex: 1 1 auto;
+  min-width: 0;
   margin: 0 !important;
   grid-column: unset !important;
   grid-row: unset !important;
-  font-size: 0.8rem !important;
-  line-height: 1.35 !important;
+  font-size: 0.75rem !important;
+  line-height: 1.25 !important;
   color: #fff !important;
 }
 
 .site-dawo .sticky-cta__prefix {
   display: block;
-  font-size: 0.72rem;
+  font-size: 0.65rem;
+  font-weight: 600;
   color: var(--fp-muted);
-  margin-bottom: 0.1rem;
+  margin: 0 0 0.12rem;
+  letter-spacing: 0.02em;
 }
 
 .site-dawo .sticky-cta__highlight {
   display: block !important;
   color: var(--fp-lime) !important;
-  font-size: 0.85rem !important;
+  font-size: 0.78rem !important;
   font-weight: 800 !important;
   margin: 0 !important;
-  white-space: nowrap;
+  line-height: 1.15 !important;
 }
 
 .site-dawo .sticky-cta__btn {
+  flex: 0 0 auto;
   grid-column: unset !important;
   grid-row: unset !important;
-  flex-shrink: 0;
-  padding: 0.5rem 1rem !important;
-  font-size: 0.78rem !important;
+  align-self: center !important;
+  padding: 0.42rem 0.7rem !important;
+  font-size: 0.7rem !important;
   white-space: nowrap;
+  line-height: 1.2;
 }
 
 .site-dawo .sticky-cta__close {
-  flex-shrink: 0;
+  flex: 0 0 auto;
   align-self: center !important;
   grid-column: unset !important;
   grid-row: unset !important;
-  width: 40px !important;
-  height: 40px !important;
-  min-width: 40px !important;
-  min-height: 40px !important;
+  width: 34px !important;
+  height: 34px !important;
+  min-width: 34px !important;
+  min-height: 34px !important;
   border: 1px solid rgba(255, 255, 255, 0.22) !important;
   background: rgba(255, 255, 255, 0.08) !important;
   color: #fff !important;
-  border-radius: 10px !important;
-  font-size: 1.35rem !important;
+  border-radius: 9px !important;
+  font-size: 1.2rem !important;
   line-height: 1 !important;
   cursor: pointer !important;
   touch-action: manipulation;
@@ -565,11 +563,11 @@ body.site-dawo.has-sticky-cta {
 }
 
 body.site-dawo.has-sticky-cta .site-copyright {
-  padding-bottom: calc(6.75rem + env(safe-area-inset-bottom, 0px)) !important;
+  padding-bottom: calc(5rem + env(safe-area-inset-bottom, 0px)) !important;
 }
 
 body.site-dawo.has-sticky-cta .back-to-top.is-visible {
-  bottom: calc(6.5rem + env(safe-area-inset-bottom, 0px)) !important;
+  bottom: calc(4.75rem + env(safe-area-inset-bottom, 0px)) !important;
 }
 
 @media (min-width: 520px) {
@@ -584,43 +582,39 @@ body.site-dawo.has-sticky-cta .back-to-top.is-visible {
     transform: translateX(-50%) translateY(calc(100% + 1.5rem)) !important;
   }
 
-  .site-dawo .sticky-cta__main {
-    flex-direction: row;
-    align-items: center;
-    gap: 0.75rem;
+  .site-dawo .sticky-cta__panel {
+    padding: 0.6rem 0.75rem !important;
+    gap: 0.65rem !important;
+  }
+
+  .site-dawo .sticky-cta__text {
+    font-size: 0.8rem !important;
   }
 
   .site-dawo .sticky-cta__prefix {
     display: inline;
-    margin-bottom: 0;
+    margin: 0 0.25rem 0 0;
   }
 
   .site-dawo .sticky-cta__highlight {
     display: inline !important;
-    margin-left: 0.2rem !important;
     font-size: 0.88rem !important;
+  }
+
+  .site-dawo .sticky-cta__btn {
+    padding: 0.48rem 0.95rem !important;
+    font-size: 0.76rem !important;
   }
 }
 
 @media (max-width: 380px) {
   .site-dawo .sticky-cta__highlight {
-    white-space: normal;
-    font-size: 0.78rem !important;
-  }
-}
-
-@media (max-width: 519px) {
-  .site-dawo .sticky-cta__panel {
-    display: flex !important;
-    grid-template-columns: unset !important;
+    font-size: 0.72rem !important;
   }
 
-  .site-dawo .sticky-cta__btn,
-  .site-dawo .sticky-cta__close,
-  .site-dawo .sticky-cta__text {
-    grid-column: unset !important;
-    grid-row: unset !important;
-    align-self: center !important;
+  .site-dawo .sticky-cta__btn {
+    padding: 0.38rem 0.55rem !important;
+    font-size: 0.65rem !important;
   }
 }
 

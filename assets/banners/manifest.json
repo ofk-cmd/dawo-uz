@@ -1,38 +1,8 @@
 [
   {
-    "file": "assets/banners/home-hero.webp",
-    "type": "hero",
-    "page": "home"
-  },
-  {
     "file": "assets/banners/home-s01.webp",
     "type": "section",
     "page": "home"
-  },
-  {
-    "file": "assets/banners/home-s02.webp",
-    "type": "section",
-    "page": "home"
-  },
-  {
-    "file": "assets/banners/home-s03.webp",
-    "type": "section",
-    "page": "home"
-  },
-  {
-    "file": "assets/banners/home-s04.webp",
-    "type": "section",
-    "page": "home"
-  },
-  {
-    "file": "assets/banners/home-s05.webp",
-    "type": "section",
-    "page": "home"
-  },
-  {
-    "file": "assets/banners/bonuslar-hero.webp",
-    "type": "hero",
-    "page": "bonuslar"
   },
   {
     "file": "assets/banners/bonuslar-s01.webp",
@@ -40,114 +10,9 @@
     "page": "bonuslar"
   },
   {
-    "file": "assets/banners/bonuslar-s02.webp",
-    "type": "section",
-    "page": "bonuslar"
-  },
-  {
-    "file": "assets/banners/bonuslar-s03.webp",
-    "type": "section",
-    "page": "bonuslar"
-  },
-  {
-    "file": "assets/banners/bonuslar-s04.webp",
-    "type": "section",
-    "page": "bonuslar"
-  },
-  {
-    "file": "assets/banners/mobil-hero.webp",
-    "type": "hero",
-    "page": "mobil"
-  },
-  {
-    "file": "assets/banners/mobil-s01.webp",
-    "type": "section",
-    "page": "mobil"
-  },
-  {
-    "file": "assets/banners/mobil-s02.webp",
-    "type": "section",
-    "page": "mobil"
-  },
-  {
-    "file": "assets/banners/mobil-s03.webp",
-    "type": "section",
-    "page": "mobil"
-  },
-  {
-    "file": "assets/banners/royxatdan-otish-hero.webp",
-    "type": "hero",
-    "page": "royxatdan-otish"
-  },
-  {
-    "file": "assets/banners/royxatdan-otish-s01.webp",
-    "type": "section",
-    "page": "royxatdan-otish"
-  },
-  {
-    "file": "assets/banners/royxatdan-otish-s02.webp",
-    "type": "section",
-    "page": "royxatdan-otish"
-  },
-  {
-    "file": "assets/banners/royxatdan-otish-s03.webp",
-    "type": "section",
-    "page": "royxatdan-otish"
-  },
-  {
-    "file": "assets/banners/royxatdan-otish-s04.webp",
-    "type": "section",
-    "page": "royxatdan-otish"
-  },
-  {
-    "file": "assets/banners/kirish-hero.webp",
-    "type": "hero",
-    "page": "kirish"
-  },
-  {
-    "file": "assets/banners/kirish-s01.webp",
-    "type": "section",
-    "page": "kirish"
-  },
-  {
-    "file": "assets/banners/kirish-s02.webp",
-    "type": "section",
-    "page": "kirish"
-  },
-  {
-    "file": "assets/banners/kirish-s03.webp",
-    "type": "section",
-    "page": "kirish"
-  },
-  {
-    "file": "assets/banners/tolov-hero.webp",
-    "type": "hero",
-    "page": "tolov"
-  },
-  {
     "file": "assets/banners/tolov-s01.webp",
     "type": "section",
     "page": "tolov"
-  },
-  {
-    "file": "assets/banners/tolov-s02.webp",
-    "type": "section",
-    "page": "tolov"
-  },
-  {
-    "file": "assets/banners/tolov-s03.webp",
-    "type": "section",
-    "page": "tolov"
-  },
-  {
-    "file": "assets/banners/tolov-s04.webp",
-    "type": "section",
-    "page": "tolov"
-  },
-  {
-    "file": "assets/banners/kazino-hero.webp",
-    "type": "hero",
-    "page": "kazino"
   },
   {
     "file": "assets/banners/kazino-s01.webp",
@@ -155,67 +20,12 @@
     "page": "kazino"
   },
   {
-    "file": "assets/banners/kazino-s02.webp",
-    "type": "section",
-    "page": "kazino"
-  },
-  {
-    "file": "assets/banners/kazino-s03.webp",
-    "type": "section",
-    "page": "kazino"
-  },
-  {
-    "file": "assets/banners/kazino-s04.webp",
-    "type": "section",
-    "page": "kazino"
-  },
-  {
-    "file": "assets/banners/sport-hero.webp",
-    "type": "hero",
-    "page": "sport"
-  },
-  {
     "file": "assets/banners/sport-s01.webp",
     "type": "section",
     "page": "sport"
   },
   {
-    "file": "assets/banners/sport-s02.webp",
-    "type": "section",
-    "page": "sport"
-  },
-  {
-    "file": "assets/banners/sport-s03.webp",
-    "type": "section",
-    "page": "sport"
-  },
-  {
-    "file": "assets/banners/sport-s04.webp",
-    "type": "section",
-    "page": "sport"
-  },
-  {
-    "file": "assets/banners/sharhlar-hero.webp",
-    "type": "hero",
-    "page": "sharhlar"
-  },
-  {
     "file": "assets/banners/sharhlar-s01.webp",
-    "type": "section",
-    "page": "sharhlar"
-  },
-  {
-    "file": "assets/banners/sharhlar-s02.webp",
-    "type": "section",
-    "page": "sharhlar"
-  },
-  {
-    "file": "assets/banners/sharhlar-s03.webp",
-    "type": "section",
-    "page": "sharhlar"
-  },
-  {
-    "file": "assets/banners/sharhlar-s04.webp",
     "type": "section",
     "page": "sharhlar"
   }

@@ -509,3 +509,36 @@ body.site-dawo.has-sticky-cta .back-to-top.is-visible {
   background: #060d18 !important;
   border-top: 2px solid rgba(184, 255, 0, 0.12) !important;
 }
+
+/* On-page table of contents (replaces menu-duplicating nav) */
+.site-dawo .page-toc.on-page-nav {
+  justify-content: flex-start;
+  max-width: none;
+  margin: 1.5rem 0 2rem;
+  padding: 1rem 1.25rem;
+  background: rgba(21, 34, 56, 0.55);
+  border: 1px solid rgba(184, 255, 0, 0.14);
+  border-radius: 16px;
+}
+
+.site-dawo .page-toc__label {
+  flex: 0 0 100%;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--fp-lime);
+  margin: 0 0 0.35rem;
+}
+
+.site-dawo .on-page-nav.page-toc a {
+  color: var(--fp-lime);
+  border-color: rgba(184, 255, 0, 0.28);
+  background: rgba(11, 21, 40, 0.65);
+}
+
+.site-dawo .on-page-nav.page-toc a:hover {
+  color: var(--fp-navy);
+  background: var(--fp-lime);
+  border-color: var(--fp-lime);
+}

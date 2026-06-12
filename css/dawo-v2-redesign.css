@@ -465,6 +465,17 @@
   pointer-events: none;
 }
 
+.site-dawo .sticky-cta__icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.65rem;
+  line-height: 1;
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
 .site-dawo .sticky-cta__panel {
   display: flex !important;
   flex-direction: row !important;
@@ -507,9 +518,10 @@
 .site-dawo .sticky-cta__highlight {
   display: block !important;
   color: var(--fp-lime) !important;
-  font-size: 0.92rem !important;
+  font-size: 0.85rem !important;
   font-weight: 800 !important;
   margin: 0 !important;
+  white-space: nowrap;
 }
 
 .site-dawo .sticky-cta__btn {
@@ -565,7 +577,7 @@ body.site-dawo.has-sticky-cta .back-to-top.is-visible {
     left: 50% !important;
     right: auto !important;
     transform: translateX(-50%) !important;
-    max-width: 440px !important;
+    max-width: 520px !important;
   }
 
   .site-dawo .sticky-cta--dock.is-hidden {
@@ -586,6 +598,14 @@ body.site-dawo.has-sticky-cta .back-to-top.is-visible {
   .site-dawo .sticky-cta__highlight {
     display: inline !important;
     margin-left: 0.2rem !important;
+    font-size: 0.88rem !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .site-dawo .sticky-cta__highlight {
+    white-space: normal;
+    font-size: 0.78rem !important;
   }
 }
 

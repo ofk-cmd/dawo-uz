@@ -52,5 +52,17 @@
     "page": "sharhlar",
     "theme": "express-win",
     "bytes": 44102
+  },
+  {
+    "file": "assets/banners/hero-banner-zerkalo.webp",
+    "page": "zerkalo",
+    "theme": "security",
+    "bytes": 78534
+  },
+  {
+    "file": "assets/banners/hero-banner-litsenziya.webp",
+    "page": "litsenziya",
+    "theme": "security",
+    "bytes": 78534
   }
 ]

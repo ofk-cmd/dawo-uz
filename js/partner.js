@@ -9,6 +9,8 @@
     }
   })();
 
+  var lastOpenAt = 0;
+
   function resolvePartnerButton(target) {
     if (!target || !target.closest) return null;
     return target.closest(".js-go-partner");
@@ -16,10 +18,10 @@
 
   function openPartnerLink() {
     if (!PARTNER_URL) return;
-    var opened = window.open(PARTNER_URL, "_blank", "noopener,noreferrer");
-    if (!opened) {
-      window.location.assign(PARTNER_URL);
-    }
+    var now = Date.now();
+    if (now - lastOpenAt < 400) return;
+    lastOpenAt = now;
+    window.open(PARTNER_URL, "_blank", "noopener,noreferrer");
   }
 
   function onPartnerClick(event) {
@@ -31,19 +33,6 @@
       event.stopImmediatePropagation();
     }
     openPartnerLink();
-  }
-
-  function bindPartnerButtons() {
-    var buttons = document.querySelectorAll(".js-go-partner");
-    buttons.forEach(function (btn) {
-      btn.addEventListener("click", onPartnerClick);
-    });
-  }
-
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", bindPartnerButtons);
-  } else {
-    bindPartnerButtons();
   }
 
   document.addEventListener("click", onPartnerClick, true);

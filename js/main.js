@@ -55,18 +55,30 @@
 
   var stickyCta = document.getElementById("sticky-cta");
   if (stickyCta) {
-    var stickyKey = "dawo_sticky_dismissed";
-    if (sessionStorage.getItem(stickyKey) === "1") {
-      stickyCta.classList.add("is-hidden");
-    } else {
-      document.body.classList.add("has-sticky-cta");
+    var stickyKey = "casino_sticky_dismissed";
+    var stickyDismissed = sessionStorage.getItem(stickyKey) === "1";
+
+    function updateStickyVisibility() {
+      if (stickyDismissed) {
+        stickyCta.classList.add("is-hidden");
+        document.body.classList.remove("has-sticky-cta");
+        return;
+      }
+      var show = window.scrollY > 520;
+      stickyCta.classList.toggle("is-hidden", !show);
+      document.body.classList.toggle("has-sticky-cta", show);
     }
+
+    updateStickyVisibility();
+    window.addEventListener("scroll", updateStickyVisibility, { passive: true });
+
     var closeBtn = stickyCta.querySelector(".sticky-cta__close");
     function dismissSticky(event) {
       if (event) {
         event.preventDefault();
         event.stopPropagation();
       }
+      stickyDismissed = true;
       stickyCta.classList.add("is-hidden");
       document.body.classList.remove("has-sticky-cta");
       try {

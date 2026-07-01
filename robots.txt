@@ -139,4 +139,4 @@ Disallow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://dawo.uz/sitemap_index.xml
+Sitemap: https://dawo.uz/sitemap.xml

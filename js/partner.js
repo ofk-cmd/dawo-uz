@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  var PARTNER_URL = "https://bobaffs.org/click?o=1603&a=189";
+  var PARTNER_URL = "https://bobaffs.org/click?o=1887&a=189";
   var lastOpenAt = 0;
 
   function resolvePartnerButton(target) {

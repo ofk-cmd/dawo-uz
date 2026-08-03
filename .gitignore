@@ -1,0 +1,9 @@
+# --- local aux / never publish to GitHub ---
+.DS_Store
+**/.DS_Store
+KAK-OTKRYT.txt
+**/KAK-OTKRYT.txt
+ZALIVKA.txt
+ZALIVKA*.txt
+**/ZALIVKA*.txt
+.github/workflows/
